@@ -54,6 +54,24 @@ namespace Temperature_Converter
                     label7.Text = Convert.ToString(s_kel);
                 }
 
+                Random rand = new Random();
+                int k1 = rand.Next(3);
+                int k2 = rand.Next(3);
+                int k3 = rand.Next(3);
+
+                if(k1==0) pictureBox1.Image = Properties.Resources.projekt_termometru;
+                else if(k1==1) pictureBox1.Image = Properties.Resources.projekt_termometru2;
+                else pictureBox1.Image = Properties.Resources.projekt_termometru3;
+
+                if (k2 == 0) pictureBox2.Image = Properties.Resources.projekt_termometru;
+                else if (k2 == 1) pictureBox2.Image = Properties.Resources.projekt_termometru2;
+                else pictureBox2.Image = Properties.Resources.projekt_termometru3;
+
+                if (k3 == 0) pictureBox3.Image = Properties.Resources.projekt_termometru;
+                else if (k3 == 1) pictureBox3.Image = Properties.Resources.projekt_termometru2;
+                else pictureBox3.Image = Properties.Resources.projekt_termometru3;
+
+
 
             }
             else {
