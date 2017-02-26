@@ -19,7 +19,7 @@ namespace Temperature_Converter
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //zabezpiecznzie brak przed pomyleiem rzcinak i litermai zamiast cyfr, zaokraglanie wyniku do 2 miejsc
+            
             if (comboBox1.SelectedItem != null && textBox1.Text != "" && textBox1.Text != "")
             {
                 double s_kel, s_fakre, s_cel, dane;
